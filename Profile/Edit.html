@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/3198d18499.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar d-none d-md-block navbar-expand-md navbar-light bg-light py-4 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"><img src="main-logo.png" alt="" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              
+              <div class="nav-item dropdown hoverlink">
+                <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PAGES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../about/about.html">ABOUT</a></li>
+                  <li><a class="dropdown-item" href="#">SHOP</a></li>
+                  <li><a class="dropdown-item" href="../cart/cart.html">CART</a></li>
+                  <li><a class="dropdown-item" href="../checkOut/checkout.html">CHECKOUT</a></li>
+                  <li><a class="dropdown-item" href="../singleProduct/singleproduct.html">SINGLE PRODUCT</a></li>
+                  <li><a class="dropdown-item" href="../contact/contact.html">CONTACT</a></li>
+                </ul>
+              </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Sign In
+              </button>                
+            </div>
+            <!-- New ******************************-->
+            <div class="d-flex mt-2">
+              <a class="cart" href="profile.html">
+                <i class="fa-solid fa-user m-2"></i>
+                <p class="fav-counter badge bg-warning"></p>
+              </a>
+            </div>
+            <!--**************************************-->
+            <div class="d-flex mt-2">
+                <a class="cart" href="../cart/cart.html">
+                  <i class="fa-solid fa-cart-shopping m-2"></i>
+                  <p class="counter badge bg-warning"></p>
+                </a>
+            </div>
+            <div class="d-flex mt-2">
+              <a class="cart" href="../cart/cart.html">
+                <i class="fa-regular fa-heart m-2"></i>
+                <p class="fav-counter badge bg-warning"></p>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+    </nav>
+    <nav class="navbar d-md-none navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MiniStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" title="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MiniStore</h5>
+            <div class="d-flex mt-2">
+              <a class="cart" href="../cart/cart.html">
+                <i class="fa-solid fa-cart-shopping m-2"></i>
+                <p class="counter badge bg-warning"></p>
+              </a>
+            </div>
+            <div class="d-flex mt-2">
+              <a class="cart" href="../cart/cart.html">
+                <i class="fa-regular fa-heart m-2"></i>
+                <p class="fav-counter badge bg-warning"></p>
+              </a>
+            </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Sign In
+              </button>              
+            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+              <li class="nav-item hoverlink" >
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../about/about.html">ABOUT</a>
+              </li>
+              <li class="nav-item hoverlink" id="linkone">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../cart/cart.html">CART</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../checkOut/checkout.html">CHECK OUT</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../singleProduct/singleproduct.html">SINGEL PRODUCT</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../contact/contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+        
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"><!--make the model does not closed if we clicked any where in the page-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <p>SIGN IN</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                      <form action="" method="post">
+                        <div class="form-floating">
+                          <input type="text" name="username" id="username" class="form-control" placeholder="username">
+                          <label for="username">User Name</label>
+                        </div>
+                        <div class="form-floating">
+                          <input type="text" name="password" id="password" class="form-control" placeholder="password">
+                          <label for="password">Password</label>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- END  NAV -->
+    
+    <!-- ************************************ -->
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                    <div>
+                        <div class="d-flex justify-content-center mb-4">
+                            <img id="selectedAvatar" src="person2.png"
+                            class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;" alt="example placeholder" />
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn btn-primary btn-rounded">
+                                <label class="form-label text-white m-1" for="customFile2">Choose file</label>
+                                <input type="file" class="form-control d-none" id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <br>
+                    <span class="font-weight-bold">Asmaa Mohamed</span>
+                    <span class="text-black-50">moaamohamed25@gmail.com</span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">First Name*</label><input type="text" class="form-control" placeholder="first name" value=""></div>
+                        <div class="col-md-6"><label class="labels">Lastname*</label><input type="text" class="form-control" value="" placeholder="lastname"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Mobile Number*</label><input type="text" class="form-control" placeholder="enter phone number" value=""></div>
+                        <div class="col-md-12"><label class="labels">Address*</label><input type="text" class="form-control" placeholder="enter address " value=""></div>
+                        <div class="col-md-12"><label class="labels">Email ID*</label><input type="text" class="form-control" placeholder="enter email id" value=""></div>
+                        <div class="col-md-12"><label class="labels">New Password*</label><input type="password" class="form-control" placeholder="enter Password" value=""></div>
+                        <div class="col-md-12"><label class="labels">Confirm Password*</label><input type="password" class="form-control" placeholder="enter Password" value=""></div>
+                      </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Birthday</label><input type="date" class="form-control" value=""><br></div>
+                        <div class="col-md-12"><label class="labels">Gender </label>
+                            <input type="radio"  name="Gender" value="Male"><label class="labels">Male</label>
+                            <input type="radio"  name="Gender" value="Famale"><label class="labels">Famale</label>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        function displaySelectedImage(event, elementId) {
+        const selectedImage = document.getElementById(elementId);
+        const fileInput = event.target;
+
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    selectedImage.src = e.target.result;
+                };
+
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+    </script>
+</body>
+</html>

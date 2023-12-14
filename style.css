@@ -1,0 +1,241 @@
+
+:root {
+    --accent-color:             #717171;
+    --white-color:              #fff;
+    --black-color:              #000;
+    --gray-color:               #F3F3F3;
+    --gray-color-300:           #D8D8D8;
+    --gray-color-500:           #AEAEAE;
+    --gray-color-800:           #3A3A3A;
+    --light-gray-color:         #D7DDDF;
+    --primary-color:            #72AEC8;
+    --bs-primary-rgb:           114,174,200;
+    --light-color:              #f8f9fa;
+    --dark-color:               #212529;
+    --light-blue-color:         #EDF1F3;
+    --navbar-color-color:       #131814;
+    --swiper-theme-color:       #4A4A4A;
+    --swiper-pagination-color:  #4A4A4A;
+}
+#linkone>a{
+    color: var(--primary-color);
+}
+.hoverlink:hover>a{
+    color: var(--primary-color);
+}
+
+
+/* start of cart and badge */
+.cart{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+.cart>*{
+    color: black;
+    transition: all 0.3s;
+}
+.cart:hover>i{
+    color: #72AEC8;
+}
+
+.cart>i{
+    transform: scale(2);
+}
+.badge{
+    transform: translate(-20px,-10px);
+    border-radius: 50%;
+}
+@media screen and (max-width: 514px) {
+    .offcanvas-title{
+        display: none;
+    }
+}
+.navbar-link{
+    text-decoration: none;
+    color: #72AEC8;
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.navbar-link:hover{
+    color: #007bff;
+}
+/* end of cart and badge */
+
+
+
+
+.carousel-item{
+    background-color: var(--light-blue-color);
+}
+.carousel-button{
+    filter: invert(80%);
+    transform: scale(4);
+}
+@media screen and (max-width:860px) {
+    .carousel-button{
+        transform: scale(2);
+    }
+}
+@media screen and (max-width:767px) {
+    .carousel-item-head>div{
+        background-image: url(imgs/banner-image.png);
+        background-size: cover;
+        background-color: rgb(0 0 0 / 20%) ;
+        background-blend-mode: multiply;
+        height: 600px;
+        color: white;
+    }
+}
+
+.icon{
+    color: var(--primary-color);
+    font-size: 25px;
+    margin-right: 5px;
+}
+.icon+div>p{
+    opacity: .4;
+}
+
+
+.phone-shop>a>span{
+    text-decoration: underline;
+}
+.phone-image{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title+p{
+    color: var(--primary-color);
+}
+.title{
+    transition: all 0.3s;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .phone-image>img{
+        width: 100% !important;
+    }
+}
+
+
+
+/* carousal one item*/
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child>div{
+    width: 23%;
+    margin: 5px 15px;
+}
+@media screen and (max-width:992px) {
+    .child{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .child>div{
+        width: 45%;
+    }
+}
+
+
+
+.sale{
+    background-color: var(--light-blue-color);
+}
+.sale-content>*{
+    font-size: 25px;
+}
+
+
+@media screen and (max-width:767px) {
+    .sale{
+        background-image: url(imgs/single-image1.png);
+        background-size: cover;
+        background-color: rgb(0 0 0 / 20%) ;
+        background-blend-mode: multiply;
+        height: 600px;
+        color: white;
+    }
+    .sale-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+.quote div{
+    background-color: white !important;
+}
+.quote-icon>i{
+    opacity: 0.2;
+    font-size: 55px;
+}
+.quote-icon+div>div>div>div{
+    height: 300px ;
+}
+.quote-icon+div>div>div>div>div{
+    width: 70%;
+}
+.quote-content{
+    font-size: 30px;
+    text-align: center;
+    opacity: 0.8;
+}
+.stars{
+    color: var(--primary-color);
+}
+@media screen and (max-width:767px) {
+    .quote-icon+div>div>div>div{
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width:993px) {
+    .subscribe>input{
+        width: 75%;
+        height: 70px;
+    }
+    .subscribe>button{
+        width: 25%;
+        height: 70px;
+    }
+}
+
+
+.shop-img{
+    max-width: 100%;
+    transform: scaleY(1.22);
+}
+@media screen and (max-width:575px) {
+    .shop-img{
+        transform: scaleY(1);
+    }
+}
+.links{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+.links:hover{
+    color: var(--primary-color);
+}

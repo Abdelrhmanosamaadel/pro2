@@ -1,0 +1,133 @@
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#linkone>a{
+    color: #72AEC8;
+}
+.hoverlink:hover>a{
+    color: #72AEC8;
+}
+
+
+/* start of cart and badge */
+.cart{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+.cart>*{
+    color: black;
+    transition: all 0.3s;
+}
+.cart:hover>i{
+    color: #72AEC8;
+}
+
+.cart>i{
+    transform: scale(2);
+}
+.badge{
+    transform: translate(-20px,-10px);
+    border-radius: 50%;
+}
+@media screen and (max-width: 514px) {
+    .offcanvas-title{
+        display: none;
+    }
+}
+/* end of cart and badge */
+
+
+.header{
+    background-color: #EDF1F3;
+    height: 200px;
+}
+.header>span{
+    font-size: 50px;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+}
+#link:hover{
+    color: #72AEC8;
+}
+
+
+.head{
+    border-bottom: solid 0.5px #AEAEAE;
+}
+.product>div{
+    width: 30%;
+}
+.products>*{
+    font-size: 20px;
+}
+.products>div{
+    border-bottom: solid 0.5px #AEAEAE;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+.products i{
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.products i:hover{
+    color: #72AEC8;
+}
+.img{
+    width: 150px;
+}
+.img>img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.price{
+    font-size: 30px;
+    color: #72AEC8;
+}
+@media screen and (max-width: 514px) {
+    .product>div{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .product{
+        flex-wrap: wrap;
+    }
+}
+
+.empty{
+    font-size: 50px;
+}
+
+
+
+
+
+.links{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+.links:hover{
+    color: #72AEC8;
+}
+.navbar-link{
+    text-decoration: none;
+    color: #72AEC8;
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.navbar-link:hover{
+    color: #007bff;
+}

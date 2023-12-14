@@ -1,0 +1,165 @@
+#linkone>a{
+    color: #72AEC8;
+}
+.hoverlink:hover>a{
+    color: #72AEC8;
+}
+
+/* start of cart and badge */
+.cart{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+}
+.cart>*{
+    color: black;
+    transition: all 0.3s;
+}
+.cart:hover>i{
+    color: #72AEC8;
+}
+
+.cart>i{
+    transform: scale(2);
+}
+.badge{
+    transform: translate(-20px,-10px);
+    border-radius: 50%;
+}
+@media screen and (max-width: 514px) {
+    .offcanvas-title{
+        display: none;
+    }
+}
+/* end of cart and badge */
+
+.header{
+    background-color: #EDF1F3;
+    height: 200px;
+}
+.header>span{
+    font-size: 50px;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    transition: color .3s;
+}
+#link:hover{
+    color: #72AEC8;
+}
+
+
+
+
+/***************** start of shop ************/
+
+@media screen and (max-width: 600px) {
+    .category>div{
+        margin-left: -10px ;
+    }
+}
+select{
+    width: 100px;
+}
+
+.filter{
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+
+
+
+/************ start of products *************/
+.products>div{
+    margin: 10px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 480px;
+    width: 27%;
+}
+
+.products>div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+}
+.img-container>img{
+    transition: all 0.4s;
+}
+.img-container:hover>img{
+    transform: scale(0.8) !important; 
+}
+.name{
+    font-size: 25px;
+}
+.price{
+    font-weight: 700;
+}
+.original{
+    text-decoration: line-through;
+}
+.discount{
+    color: green;
+    font-weight: 600;
+}
+
+@media screen and (max-width:1310px) {
+    .products>div{
+        
+        width: 44%;
+    }
+}
+@media screen and (max-width:992px) {
+    .products>div{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .products>div{
+        height: 570px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .products>div{
+        height: 600px;
+    }
+    .cost,.rate{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:415px) {
+    .products>div{
+        height: 680px;
+    }
+}
+@media screen and (max-width:300px) {
+    .products>div{
+        height: 800px;
+    }
+}
+/*end of products*/
+.links{
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+.links:hover{
+    color: #72AEC8;
+}
+.navbar-link{
+    text-decoration: none;
+    color: #72AEC8;
+    margin: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.navbar-link:hover{
+    color: #007bff;
+}

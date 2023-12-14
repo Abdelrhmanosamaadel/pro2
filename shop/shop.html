@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHOP</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="shop.css">
+        <script src="https://kit.fontawesome.com/3198d18499.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <nav class="navbar d-none d-md-block navbar-expand-md navbar-light bg-light py-4 sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.php"><img src="../imgs/main-logo.png" alt="" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+              <div class="d-xl-flex d-none justify-content-center align-items-center btn-group">
+                <a class="navbar-link" href="../index.php">HOME</a>
+                <a class="navbar-link" href="../about/about.php">ABOUT</a>
+                <a class="navbar-link" href="#">SHOP</a>
+                <a class="navbar-link" href="../cart/cart.php">CART</a>
+                <a class="navbar-link" href="../checkOut/checkout.php">CHECKOUT</a>
+                <a class="navbar-link" href="../singleProduct/singleproduct.php">SINGLE PRODUCT</a>
+                <a class="navbar-link" href="../contact/contact.php">CONTACT</a>
+              </div>
+              <div class="nav-item dropdown hoverlink d-xl-none">
+                <a class="nav-link dropdown-toggle mt-2" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PAGES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../index.php">HOME</a></li>
+                  <li><a class="dropdown-item" href="../about/about.php">ABOUT</a></li>
+                  <li><a class="dropdown-item" href="#">SHOP</a></li>
+                  <li><a class="dropdown-item" href="../cart/cart.php">CART</a></li>
+                  <li><a class="dropdown-item" href="../checkOut/checkout.php">CHECKOUT</a></li>
+                  <li><a class="dropdown-item" href="../singleProduct/singleproduct.php">SINGLE PRODUCT</a></li>
+                  <li><a class="dropdown-item" href="../contact/contact.php">CONTACT</a></li>
+                </ul>
+              </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Sign In
+              </button>                
+            </div>
+            <div class="d-flex mt-2">
+                <a class="cart" href="../cart/cart.php">
+                  <i class="fa-solid fa-cart-shopping m-2"></i>
+                  <p class="counter badge bg-warning"></p>
+                </a>
+            </div>
+            <div class="d-flex mt-2">
+              <a class="cart" href="#">
+                <i class="fa-regular fa-heart m-2"></i>
+                <p class="fav-counter badge bg-warning"></p>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+    </nav>
+    <nav class="navbar d-md-none navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MiniStore</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" title="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MiniStore</h5>
+            <div class="d-flex mt-2">
+              <a class="cart" href="../cart/cart.php">
+                <i class="fa-solid fa-cart-shopping m-2"></i>
+                <p class="counter badge bg-warning"></p>
+              </a>
+            </div>
+            <div class="d-flex mt-2">
+              <a class="cart" href="#">
+                <i class="fa-regular fa-heart m-2"></i>
+                <p class="fav-counter badge bg-warning"></p>
+              </a>
+            </div>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Sign In
+              </button>              
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
+              <li class="nav-item hoverlink" >
+                <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../about/about.php">ABOUT</a>
+              </li>
+              <li class="nav-item hoverlink" id="linkone">
+                <a class="nav-link" href="#">SHOP</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../cart/cart.php">CART</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../checkOut/checkout.php">CHECK OUT</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../singleProduct/singleproduct.php">SINGEL PRODUCT</a>
+              </li>
+              <li class="nav-item hoverlink">
+                <a class="nav-link" href="../contact/contact.php">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+        
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"><!--make the model does not closed if we clicked any where in the page-->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                        <p>SIGN IN</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                      <form action="../sign.php" method="post">
+                        <div class="form-floating">
+                          <input type="email" name="email" id="email" class="form-control" placeholder="email">
+                          <label for="email">email</label>
+                        </div>
+                        <div class="form-floating">
+                          <input type="password" name="password" id="password" class="form-control" placeholder="password">
+                          <label for="password">Password</label>
+                        </div>
+                        <input type = "submit">
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- END  NAV -->
+        <div class="container-fluid">
+            <div class="row mb-5 header d-flex flex-column align-items-center justify-content-center">
+                <span class="col-12 d-flex justify-content-center align-items-center">SHOP</span>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="../index.php" id="link">HOME &nbsp;</a>
+                    <div>> SHOP</div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF WHAT AFTER NAV -->
+        
+        <!-- start of shop -->
+        <div class="container-fluid">
+          <div class="shop mt-5 row">
+              <div class="col-12">
+                  <div class="d-flex flex-wrap justify-content-center products">
+
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+          <!-- filter button -->
+          <div class=" col-3">
+            <button class="btn btn-info filter" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              Filters
+            </button>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="category d-flex flex-column">
+                  <h2>category</h2>
+                  <div>
+                      <input type="radio" name="category" id="laptop" onclick="filterProducts(this,'laptop','category')">
+                      <label for="laptop">laptop</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="category" id="tv" onclick="filterProducts(this,'tv','category')">
+                      <label for="tv">Tv</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="category" id="earphone" onclick="filterProducts(this,'earphone','category')">
+                      <label for="earphone">earphone</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="category" id="smartwatch" onclick="filterProducts(this,'smartwatch','category')">
+                      <label for="smartwatch">smartwatch</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="category" id="phone" onclick="filterProducts(this,'mobile','category')">
+                      <label for="phone">Phones</label>
+                  </div>
+                  <div>
+                      <input type="radio" name="category" id="all" onclick="filterProducts(document.querySelector('#phone'),'','category')">
+                      <label for="all">All</label>
+                  </div>
+                </div>
+                <div class="company mt-3 d-flex flex-column">
+                    <h2>Company: </h2>
+                    <select name="company" id="company" title="company" onchange="filterProducts(this,'mobile','company')">
+                        <option value="All" selected>All</option>
+                        <option value="redmi">Redmi</option>
+                        <option value="apple">Apple</option>
+                        <option value="dell">Dell</option>
+                        <option value="vivo">Vivo</option>
+                    </select>
+                </div>
+                <button class="btn btn-dark w-100 mt-4" onclick="clearFilters()">Clear Filters</button>
+              </div>
+            </div>                  
+          </div>
+        <!-- end of shop -->
+
+
+        
+  
+          <footer class="container">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-3 col-6 mt-5">
+                <div class="col"><img src="../imgs/main-logo.png" alt=""></div>
+                <p class="opacity-50 col">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                <div class="col">
+                  <a href="https://www.facebook.com/abdo.khaled.98284/"><i class="fa-brands fa-facebook mx-3"></i></a>
+                  <a href="www.linkedin.com/in/abdo-khaled-34235b283"><i class="fa-brands fa-linkedin mx-3"></i></a>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 d-flex flex-column  mt-5">
+                <h5 class="my-1">QUICK LINKS</h5>
+                <a href="../index.php" class="my-1 links">HOME</a>
+                <a href="../about.html" class="my-1 links">ABOUT</a>
+                <a href="#" class="my-1 links">SHOP</a>
+                <a href="../contact/contact.php" class="my-1 links">CONTACT</a>
+              </div>
+              <div class="col-md-3 col-6 mt-5">
+                <h5>CONTACT US</h5>
+                <div class="d-flex flex-column mb-3">
+                  <span class="opacity-50">Do you have any queries or suggestions?</span>
+                  <span><a href="mailto:abdok7496@gmail.com" class="links">SEND EMAIL</a></span>
+                </div>
+                <div class="d-flex flex-column mb-3">
+                  <span class="opacity-50">If you need support? Just give us a call.</span>
+                  <span><a href="#" class="links">0201020502664</a></span>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>        
+        <script src="shop.js"></script>
+        <script>
+          var modalId = document.getElementById('modalId');
+      
+          modalId.addEventListener('show.bs.modal', function (event) {
+                // Button that triggered the modal
+                let button = event.relatedTarget;
+                // Extract info from data-bs-* attributes
+                let recipient = button.getAttribute('data-bs-whatever');
+      
+              // Use above variables to manipulate the DOM
+          });
+      </script>
+    </body>
+</html>
